@@ -40,7 +40,7 @@ def high_low(A,B,score):
       print(f"You got it right! Current score: {score}")
       A=B
       B=assign_dictionary(data)
-      while B==A:
+      while B['follower_count']==A['follower_count']:
         B=assign_dictionary(data)
       high_low(A,B,score)
 
